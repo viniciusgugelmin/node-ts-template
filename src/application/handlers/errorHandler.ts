@@ -1,10 +1,10 @@
+import { AppError } from "./../errors/AppError";
 import { Request, Response, NextFunction } from "express";
-import { AppException } from "../exceptions/AppExcpetion";
 import { logErrorHandler } from "./logErrorHandler";
 import { responseHandler } from "./responseHandler";
 
-export function errorHandler(error: AppException | Error, req: Request, res: Response, next: NextFunction) {
-  if (error instanceof AppException) {
+export function errorHandler(error: AppError | Error, req: Request, res: Response, next: NextFunction) {
+  if (error instanceof AppError) {
     return res.status(error.status).json(
       responseHandler({
         message: error.message,

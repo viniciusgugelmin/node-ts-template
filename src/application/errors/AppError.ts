@@ -1,4 +1,4 @@
-export class AppException {
+export class AppError {
   readonly message: string;
   readonly status: number;
 

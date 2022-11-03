@@ -1,6 +1,6 @@
 import { TestsRepository } from "../repositories/TestsRepository";
 import { TestsHelper } from "../helpers/TestsHelper";
-import { AppException } from "../application/exceptions/AppExcpetion";
+import { AppError } from "../application/errors/AppError";
 
 export class TestsService {
   private readonly testRepository: TestsRepository;
@@ -17,7 +17,7 @@ export class TestsService {
     tests.push(newMessage);
 
     if (false) {
-      throw new AppException("Error");
+      throw new AppError("Error");
     }
 
     return tests;

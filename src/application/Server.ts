@@ -22,11 +22,12 @@ export class Server {
   }
 
   useRoutes() {
-    this.app.use("/api", router);
-    this.app.use(errorHandler);
+    this.app.use("/", router);
   }
 
-  useHandlers() {}
+  useHandlers() {
+    this.app.use(errorHandler);
+  }
 
   init() {
     this.app.listen(this.port, () => {

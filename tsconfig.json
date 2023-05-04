@@ -6,13 +6,9 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "lib": ["es2017", "dom"]
   },
-  "include": [
-    "src/**/*.ts"
-  ],
-  "exclude": [
-    "**/*.spec.ts",
-    "src/tests"
-  ]
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/application/executables/**/*", "src/**/*.spec.ts"]
 }

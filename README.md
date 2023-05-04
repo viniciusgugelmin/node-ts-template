@@ -1,68 +1,86 @@
 <p align="center">
-  <a href="https://github.com/username/repo">
-    <img src="./info/readme.png" alt="readme-logo" width="80" height="80">
+  <a href="https://github.com/viniciusgugelmin/node-ts-template">
+    <img src="readme.png" alt="readme-logo" width="80" height="80">
   </a>
 
   <h3 align="center">
-    repo
+    node-ts-template
   </h3>
   <p align="center">
-    Repo
-    <br />
-    <a href="https://github.com/username/repo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/viniciusgugelmin/node-ts-template/blob/master/README.md"><strong>Explore a documentação »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/username/repo/issues">Report Bug</a>
+    <a href="https://github.com/viniciusgugelmin/node-ts-template/issues">Reporte um bug</a>
     ·
-    <a href="https://github.com/username/repo/issues">Request Feature</a>
+    <a href="https://github.com/viniciusgugelmin/node-ts-template/issues">Requisite uma feature</a>
   </p>
 </p>
 
 <details open="open">
-  <summary><h2 style="display: inline-block">Abstract</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
+  <summary><h2 style="display: inline-block">📜 Sumário</h2></summary>
+
+- [Sobre o projeto](#sobre-o-projeto)
+- [Usando](#usando)
+- [Contribuindo](#contribuindo)
+
 </details>
 
-## About The Project
+<a name="sobre-o-projeto"></a>
 
-Description
+## 📋 Sobre o projeto
 
-## Roadmap
+<!-- TODO -->
 
-See the [open issues](https://github.com/username/repo/issues) for a list of proposed features (and known
-issues).
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Javascript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Node.js](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Jest](https://img.shields.io/badge/jest-%23C21325.svg?style=for-the-badge&logo=jest&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 
-### Usage
+<a name="usando"></a>
+
+## 🏁 Usando
+
+Clone o repositorio e vá para a raiz do diretório
 
 ```bash
-$ git clone https://github.com/username/repo
+$ git clone https://github.com/viniciusgugelmin/node-ts-template
 
-$ cd repo
-
-$ npm install
-
-$ npm run start
+$ cd node-ts-template
 ```
 
-## Contributing
+Instale as dependências
 
-Any contributions you make are **greatly appreciated**.
+```bash
+$ npm i
+```
 
-1. Clone the Project
-2. Create your Feature Branch (`git checkout -b feature/<featureName>`)
-3. Commit your Changes (`git commit -m '<Description of the feature added>'`)
-4. Push to the Branch (`git push origin feature/<featureName>`)
-5. Open a Pull Request
+Rode o comando para criar os arquivos de variáveis de ambiente
 
-## Contact
+```bash
+$ npm run setup
+```
 
-Name - email
+Note que após a execução do comando acima, será criado os arquivos `.env`
+, `.env.development` e `.env.test` na raiz do diretório.
 
-Project Link: [https://github.com/username/repo](https://github.com/username/repo)
+E por fim, rode o comando para iniciar a aplicação
+
+```bash
+$ npm run dev
+```
+
+<a name="contribuindo"></a>
+
+## 💻 Contribuindo
+
+Qualquer contribuição é bem-vinda! Para contribuir, siga os passos abaixo:
+
+1. Clone o projeto
+2. Crie uma branch de "feature" (`git checkout -b feature/<nomeDaFeature>`)
+3. Faça commit das suas alterações (`git commit -m '<tipo>: <descrição>'`)
+4. Faça o push da sua branch (`git push origin feature/<nomeDaFeature>`)
+5. Abra um Pull Request
+
+[Padrão de mensagens/nomes de commits/branch](https://github.com/viniciusgugelmin/node-ts-template/blob/master/docs/images/commits-standard.png)

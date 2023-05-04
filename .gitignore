@@ -1,16 +1,14 @@
-# dependencies
-/node_modules
+## Build
+dist
+node_modules
 
-# testing
-/coverage
+## Environment variables
+.env*
+!.env.example
 
-# production
-/dist
+## Tests
+coverage
 
-# misc
-.env
-.env.local
-.env.development.local
-.env.test
-.env.test.local
-.env.production.local
+## Misc
+yarn.lock
+.idea
